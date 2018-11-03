@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%=t(:name)%>:</strong>
+  <%= @company.name %>
+</p>
+
+<p>
+  <strong><%=t(:administrator)%>:</strong>
+  <%= @company.administrator %>
+</p>
+
+<p>
+  <strong><%=t(:cif)%>:</strong>
+  <%= @company.cif %>
+</p>
+
+<p>
+  <strong><%=t(:telephone)%>:</strong>
+  <%= @company.telephone %>
+</p>
+
+<p>
+  <strong><%=t(:other_telephone)%>:</strong>
+  <%= @company.other_telephone %>
+</p>
+
+<p>
+  <strong><%=t(:mobile)%>:</strong>
+  <%= @company.mobile %>
+</p>
+
+<p>
+  <strong><%=t(:fax)%>:</strong>
+  <%= @company.fax %>
+</p>
+
+<p>
+  <strong><%=t(:mail)%>:</strong>
+  <%= @company.mail %>
+</p>
+
+<p>
+  <strong><%=t(:web)%>:</strong>
+  <%= @company.web %>
+</p>
+
+<p>
+  <strong><%=t(:observations)%>:</strong>
+  <%= @company.observations %>
+</p>
+
+<%= link_to t(:edit), edit_company_path(@company) %> |
+<%= link_to t(:back), companies_path %>

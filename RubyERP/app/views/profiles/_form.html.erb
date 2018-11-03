@@ -1,0 +1,63 @@
+<div class="panel panel-default">
+  <div class="panel-heading"><h3 class="panel-title"><%=t(:profile_form)%></h3></div>
+  <div class="panel-body">
+<%= form_for(@profile, html:{class:'form-horizontal', role:'form'}) do |f| %>
+  <%= render "layouts/errors", :errors => @profile.errors %>
+  <div class="form-group">
+    <div class="col-sm-6">
+      <%= f.label :name, t(:name)+"*:", class:'text-normal-bold' %><br>
+      <%= f.text_field :name, class:'form-control', placeholder:t(:profile_place) %>
+    </div>
+    <div class="col-sm-3">
+      <%= f.label :telephone, t(:telephone)+":", class:'text-normal-bold' %><br>
+      <%= f.text_field :telephone, class:'form-control' %>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-6">
+      <%= f.label :position, t(:position)+":", class:'text-normal-bold' %><br>
+      <%= f.text_field :position, class:'form-control' %>
+    </div>
+    <div class="col-sm-6">
+      <%= f.label :department, t(:department)+":", class:'text-normal-bold' %><br>
+      <%= f.text_field :department, class:'form-control' %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-6">
+      <%= f.label :birthday, t(:birthday)+"* :", class:'text-normal-bold' %><br>
+      <%= f.date_select :birthday, class:'form-control input-sm' %>
+    </div>
+    <div class="col-sm-3">
+      <%= f.label :sex, t(:sex)+"*:", class:'text-normal-bold' %>:<br>
+      <%= f.select :sex,[[t(:male), 0],[t(:female),1]], class:'form-control input-sm' %>
+    </div>
+    <div class="col-sm-3">
+      <%= f.label :language, t(:language)+"*:", class:'text-normal-bold' %><br>
+      <%= f.select :language, [[t(:spanish), 0],[t(:catalan),1],[t(:english),2]], class:'form-control input-sm' %>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <%if @profile.active %>
+     <div class="form-group">
+        <div class="col-sm-3">
+          <%= f.label :role, t(:role)+"*:", class:'text-normal-bold' %><br>
+          <%= f.select :role, [[t(:administrator), 0],[t(:guess),1]], class:'form-control' %>
+        </div>
+        <div class="col-sm-3">
+          <%= f.label :active, t(:active), class:'text-normal-bold' %><br>
+          <%= f.check_box :active, class:'form-control' %>
+        </div>
+       <div class="col-sm-6"></div>
+     </div>
+  <%end%>
+
+  <%= f.submit t(:submit), class:'btn btn-primary btn-xs' %>
+
+<% end %>
+  </div>
+</div>

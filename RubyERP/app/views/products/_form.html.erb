@@ -1,0 +1,51 @@
+<%= form_for(@product) do |f| %>
+    <%= render "layouts/errors", :errors => @product.errors %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :barcode %><br>
+    <%= f.text_field :barcode %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :lead_time %><br>
+    <%= f.text_field :lead_time %>
+  </div>
+  <div class="field">
+    <%= f.label :company_id %><br>
+    <%= f.number_field :company_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tax_id %><br>
+    <%= f.number_field :tax_id %>
+  </div>
+  <div class="field">
+    <%= f.label :discount_id %><br>
+    <%= f.number_field :discount_id %>
+  </div>
+  <div class="field">
+    <%= f.label :stock %><br>
+    <%= f.number_field :stock %>
+  </div>
+  <div class="field">
+    <%= f.label :stock_active %><br>
+    <%= f.check_box :stock_active %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br>
+    <%= f.check_box :active %>
+  </div>
+  <div class="actions">
+    <%= f.submit t(:submit) %>
+  </div>
+<% end %>

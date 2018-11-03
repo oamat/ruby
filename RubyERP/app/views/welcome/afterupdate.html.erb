@@ -1,0 +1,21 @@
+<h1>After Update</h1>
+
+devise_error_messages : < % = devise_error_messages! % >
+
+<br>
+flash[:alert]  : <%=flash[:alert]%><br>
+flash[:notice]  : <%=flash[:notice]%>
+<br>
+request.referer  = <%=request.referer.to_s%>
+
+
+<%=link_to "home", action: "index"%><br><br>
+
+
+<br>
+<h3>session and instance var Devise</h3>
+current_user  : <%=current_user%><br>
+current_user.email   :<%= current_user.email %> <br>
+current_user.encrypted_password  : <%= current_user.encrypted_password %> <br>
+current_user.id   :<%= current_user.id %> <br>
+user_session  :<%=user_session.instance_variable_names%> <br>

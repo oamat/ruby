@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company_id: 1
+  client_id: 1
+  invoice_id: 1
+  order_id: 1
+  deliverynote_id: 1
+  forecast_id: 1
+  name: MyString
+  price: 9.99
+  quantity: 9.99
+  discount_id: 1
+  discount: 9.99
+  tax_id: 1
+  tax: 9.99
+  description: MyText
+  total: 9.99
+
+two:
+  company_id: 1
+  client_id: 1
+  invoice_id: 1
+  order_id: 1
+  deliverynote_id: 1
+  forecast_id: 1
+  name: MyString
+  price: 9.99
+  quantity: 9.99
+  discount_id: 1
+  discount: 9.99
+  tax_id: 1
+  tax: 9.99
+  description: MyText
+  total: 9.99

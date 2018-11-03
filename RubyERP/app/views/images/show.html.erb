@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  id :  <%= @image.id %>
+</p>
+
+<p>
+  @binary.file.exists? = <%= @image.image.exists? %> <br>
+  @binary.file.url = <%=@image.image.url%><br>
+  <%= image_tag @image.image.url, size: "160x100", alt: "Edit Entry"  %><br>
+
+</p>
+
+
+<%= link_to t(:edit), edit_image_path(@image) %> |
+<%= link_to t(:back), images_path %>

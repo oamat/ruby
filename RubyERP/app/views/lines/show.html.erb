@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @line.company_id %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @line.client_id %>
+</p>
+
+<p>
+  <strong>Invoice:</strong>
+  <%= @line.invoice_id %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @line.order_id %>
+</p>
+
+<p>
+  <strong>Deliverynote:</strong>
+  <%= @line.deliverynote_id %>
+</p>
+
+<p>
+  <strong>Forecast:</strong>
+  <%= @line.forecast_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @line.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @line.price %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @line.quantity %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @line.discount_id %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @line.discount %>
+</p>
+
+<p>
+  <strong>Tax:</strong>
+  <%= @line.tax_id %>
+</p>
+
+<p>
+  <strong>Tax:</strong>
+  <%= @line.tax %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @line.description %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @line.total %>
+</p>
+
+<%= link_to t(:edit), edit_line_path(@line) %> |
+<%= link_to t(:back), lines_path %>

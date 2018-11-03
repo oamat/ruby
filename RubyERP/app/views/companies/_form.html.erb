@@ -1,0 +1,68 @@
+<div class="panel panel-default">
+  <div class="panel-heading"><h3 class="panel-title"><%=t(:company_form)%></h3></div>
+  <div class="panel-body">
+<%= form_for(@company, html:{class:'form-horizontal'}) do |f| %>
+  <%= render "layouts/errors", :errors => @company.errors %>
+  <div class="form-group">
+    <div class="col-sm-6">
+      <%= f.label :company_name, t(:name)+"* :", class:'text-normal-bold' %><br>
+      <%= f.text_field :name, class:'form-control', placeholder:t(:company_name) %>
+    </div>
+    <div class="col-sm-6">
+      <%= f.label :administrator,t(:administrator)+"* :", class:'text-normal-bold' %><br>
+      <%= f.text_field :administrator, class:'form-control', placeholder:t(:company_admin_help) %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-3">
+      <%= f.label :cif, t(:cif)+"* :", class:'text-normal-bold' %><br>
+      <%= f.text_field :cif, class:'form-control'  %>
+    </div>
+    <div class="col-sm-3">
+      <%= f.label :telephone, t(:telephone)+":", class:'text-normal-bold'%><br>
+      <%= f.text_field :telephone, class:'form-control'  %>
+    </div>
+    <div class="col-sm-3">
+      <%= f.label :other_telephone, t(:other_telephone)+":", class:'text-normal-bold' %><br>
+      <%= f.text_field :other_telephone, class:'form-control'  %>
+    </div>
+    <div class="col-sm-3">
+      <%= f.label :mobile, t(:mobile)+":", class:'text-normal-bold'%><br>
+      <%= f.text_field :mobile, class:'form-control'  %>
+    </div>
+   </div>
+
+  <div class="form-group">
+    <div class="col-sm-6">
+      <%= f.label :mail, t(:mail)+"* :", class:'text-normal-bold' %><br>
+      <%= f.text_field :mail, class:'form-control', type:'email', placeholder:'   @    ' %>
+    </div>
+    <div class="col-sm-3">
+      <%= f.label :fax,  t(:fax)+":", class:'text-normal-bold' %><br>
+      <%= f.text_field :fax, class:'form-control' %>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-9">
+      <%= f.label :web, t(:web)+":", class:'text-normal-bold' %><br>
+      <%= f.text_field :web, class:'form-control' %>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-9">
+      <%= f.label :observations,  t(:observations)+":", class:'text-normal-bold' %><br>
+      <%= f.text_area :observations, class:'form-control' %>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+   <%= f.submit t(:submit), class:'btn btn-primary btn-xs'%>
+
+<% end %>
+  </div>
+</div>

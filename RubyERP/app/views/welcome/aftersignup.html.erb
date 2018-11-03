@@ -1,0 +1,19 @@
+<h1>After Sign Up</h1>
+
+devise_error_messages : < % = devise_error_messages! % >
+
+<br>
+flash[:alert]  : <%=flash[:alert]%><br>
+flash[:notice]  : <%=flash[:notice]%>
+<br>
+request.referer  = <%=request.referer.to_s%>
+
+
+<%=link_to "home", action: "index"%><br><br>
+
+
+<br>
+<h3>session and instance var Devise</h3>
+
+user_session  :<%=user_session.instance_variable_names%> <br>
+

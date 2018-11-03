@@ -1,0 +1,27 @@
+<h1>Listing images</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @images.each do |image| %>
+      <tr>
+        <td><%= image.company_id %></td>
+        <td><%= image.image %></td>
+        <td><%= link_to t(:show), image %></td>
+        <td><%= link_to t(:edit), edit_image_path(image) %></td>
+        <td><%= link_to t(:destroy), image, method: :delete, data: { confirm: t(:confirm) } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Image', new_image_path %>

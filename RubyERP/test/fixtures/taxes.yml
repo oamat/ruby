@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tax: 9.99
+  description: MyString
+  company_id: 1
+  default: false
+
+two:
+  tax: 9.99
+  description: MyString
+  company_id: 1
+  default: false

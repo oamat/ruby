@@ -1,0 +1,39 @@
+#wrapper
+{
+    width: 800px; /*indicas el ancho total para el sitio*/
+    height: auto; /*con el valor auto le decimos que el alto vaya creciendo con el contenido */
+    margin: 0 auto; /*el primer valor indica el margen top y bottom (arriba y abajo) y el segundo el margen right y left (derecho e izquierdo). podrías poner los 4 valores en este orden: 0 auto 0 auto (top,right,bottom,left). cuando los valores para right y left se establecen en auto en la capa que contiene a todas las demás, se centra en la pantalla del usuario*/
+}
+#superior
+{
+    width: 100&#37;; /*como esta capa está dentro de wrapper, 100% equivale al total de la capa padre, que son 800px*/
+    text-align: center;
+}
+#content /*este lo dejamos vacío, pero podríamos decirlo que todo lo que haya dentro sea de color azul, por ejemplo*/
+    {
+}
+#izquierdo
+{
+    float: left; /*de esta manera flotarás la capa a la izquierda*/
+    width: 200px;
+    color: green;
+}
+#centro
+{
+    float: left; /*esta capa también la flotamos a la izquierda, para pegarla a la anterior*/
+    width: 400px;
+    text-align: center;
+    color: blue;
+}
+#derecho
+{
+    float: right; /*y esta última la flotaremos a la derecha*/
+    width: 200px; /*fíjate que la capa izquierda mide 200px, la central 400px y esta última otros 200px. la suma hace 800px, que es el ancho que tenemos disponible. de esta manera se verá todo correctamente*/
+    text-align: right;
+    color: red;
+}
+#footer
+{
+    clear: both; /*la propiedad float hace que un elemento salga del flujo del documento. cuando queramos que el flujo vuelva a su sitio, utilizamos la propiedad clear en el elemento siguiente (el que debe volver al sitio)*/
+    text-align: center;
+}

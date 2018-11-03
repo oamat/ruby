@@ -1,0 +1,6 @@
+<%if params[:actionAjax] == "html"%>
+$('#products').html('<%= escape_javascript(render("products")) %>');
+<%else%>
+$('#products').append('<%= escape_javascript(render("products")) %>');
+<%end%>
+

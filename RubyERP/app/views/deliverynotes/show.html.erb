@@ -1,0 +1,134 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @deliverynote.company_id %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @deliverynote.client_id %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @deliverynote.address_id %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @deliverynote.address %>
+</p>
+
+<p>
+  <strong>Tax:</strong>
+  <%= @deliverynote.tax_id %>
+</p>
+
+<p>
+  <strong>Tax:</strong>
+  <%= @deliverynote.tax %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @deliverynote.discount_id %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @deliverynote.discount %>
+</p>
+
+<p>
+  <strong>Payment:</strong>
+  <%= @deliverynote.payment %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @deliverynote.date %>
+</p>
+
+<p>
+  <strong>Observations:</strong>
+  <%= @deliverynote.observations %>
+</p>
+
+<p>
+  <strong>Expiration:</strong>
+  <%= @deliverynote.expiration %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @deliverynote.total %>
+</p>
+
+<p>
+  <strong>Tariff code:</strong>
+  <%= @deliverynote.tariff_code %>
+</p>
+
+<p>
+  <strong>Gross load:</strong>
+  <%= @deliverynote.gross_load %>
+</p>
+
+<p>
+  <strong>Net load:</strong>
+  <%= @deliverynote.net_load %>
+</p>
+
+<p>
+  <strong>Receiver:</strong>
+  <%= @deliverynote.receiver %>
+</p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @deliverynote.sender %>
+</p>
+
+<p>
+  <strong>Has invoice:</strong>
+  <%= @deliverynote.has_invoice %>
+</p>
+
+<p>
+  <strong>Has forecast:</strong>
+  <%= @deliverynote.has_forecast %>
+</p>
+
+<p>
+  <strong>Has order:</strong>
+  <%= @deliverynote.has_order %>
+</p>
+
+<p>
+  <strong>Has delivery:</strong>
+  <%= @deliverynote.has_delivery %>
+</p>
+
+<p>
+  <strong>Invoice:</strong>
+  <%= @deliverynote.invoice_id %>
+</p>
+
+<p>
+  <strong>Forecast:</strong>
+  <%= @deliverynote.forecast_id %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @deliverynote.order_id %>
+</p>
+
+<p>
+  <strong>Deliverynote:</strong>
+  <%= @deliverynote.deliverynote_id %>
+</p>
+
+<%= link_to t(:edit), edit_deliverynote_path(@deliverynote) %> |
+<%= link_to t(:back), deliverynotes_path %>

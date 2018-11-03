@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @discount.discount %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @discount.description %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @discount.company_id %>
+</p>
+
+<p>
+  <strong>Default:</strong>
+  <%= @discount.default %>
+</p>
+
+<%= link_to t(:edit), edit_discount_path(@discount) %> |
+<%= link_to t(:back), discounts_path %>

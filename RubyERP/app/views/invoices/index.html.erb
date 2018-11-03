@@ -1,0 +1,75 @@
+<h1>Listing invoices</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Client</th>
+      <th>Address</th>
+      <th>Address</th>
+      <th>Tax</th>
+      <th>Tax</th>
+      <th>Discount</th>
+      <th>Discount</th>
+      <th>Payment</th>
+      <th>Date</th>
+      <th>Observations</th>
+      <th>Expiration</th>
+      <th>Total</th>
+      <th>Tariff code</th>
+      <th>Gross load</th>
+      <th>Net load</th>
+      <th>Receiver</th>
+      <th>Sender</th>
+      <th>Has invoice</th>
+      <th>Has forecast</th>
+      <th>Has order</th>
+      <th>Has delivery</th>
+      <th>Invoice</th>
+      <th>Forecast</th>
+      <th>Order</th>
+      <th>Deliverynote</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @invoices.each do |invoice| %>
+      <tr>
+        <td><%= invoice.company_id %></td>
+        <td><%= invoice.client_id %></td>
+        <td><%= invoice.address_id %></td>
+        <td><%= invoice.address %></td>
+        <td><%= invoice.tax_id %></td>
+        <td><%= invoice.tax %></td>
+        <td><%= invoice.discount_id %></td>
+        <td><%= invoice.discount %></td>
+        <td><%= invoice.payment %></td>
+        <td><%= invoice.date %></td>
+        <td><%= invoice.observations %></td>
+        <td><%= invoice.expiration %></td>
+        <td><%= invoice.total %></td>
+        <td><%= invoice.tariff_code %></td>
+        <td><%= invoice.gross_load %></td>
+        <td><%= invoice.net_load %></td>
+        <td><%= invoice.receiver %></td>
+        <td><%= invoice.sender %></td>
+        <td><%= invoice.has_invoice %></td>
+        <td><%= invoice.has_forecast %></td>
+        <td><%= invoice.has_order %></td>
+        <td><%= invoice.has_delivery %></td>
+        <td><%= invoice.invoice_id %></td>
+        <td><%= invoice.forecast_id %></td>
+        <td><%= invoice.order_id %></td>
+        <td><%= invoice.deliverynote_id %></td>
+        <td><%= link_to t(:show), invoice %></td>
+        <td><%= link_to t(:edit), edit_invoice_path(invoice) %></td>
+        <td><%= link_to t(:destroy), invoice, method: :delete, data: { confirm: t(:confirm) } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Invoice', new_invoice_path %>

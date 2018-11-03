@@ -1,0 +1,75 @@
+<h1>Listing forecasts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Client</th>
+      <th>Address</th>
+      <th>Address</th>
+      <th>Tax</th>
+      <th>Tax</th>
+      <th>Discount</th>
+      <th>Discount</th>
+      <th>Payment</th>
+      <th>Date</th>
+      <th>Observations</th>
+      <th>Expiration</th>
+      <th>Total</th>
+      <th>Tariff code</th>
+      <th>Gross load</th>
+      <th>Net load</th>
+      <th>Receiver</th>
+      <th>Sender</th>
+      <th>Has invoice</th>
+      <th>Has forecast</th>
+      <th>Has order</th>
+      <th>Has delivery</th>
+      <th>Invoice</th>
+      <th>Forecast</th>
+      <th>Order</th>
+      <th>Deliverynote</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @forecasts.each do |forecast| %>
+      <tr>
+        <td><%= forecast.company_id %></td>
+        <td><%= forecast.client_id %></td>
+        <td><%= forecast.address_id %></td>
+        <td><%= forecast.address %></td>
+        <td><%= forecast.tax_id %></td>
+        <td><%= forecast.tax %></td>
+        <td><%= forecast.discount_id %></td>
+        <td><%= forecast.discount %></td>
+        <td><%= forecast.payment %></td>
+        <td><%= forecast.date %></td>
+        <td><%= forecast.observations %></td>
+        <td><%= forecast.expiration %></td>
+        <td><%= forecast.total %></td>
+        <td><%= forecast.tariff_code %></td>
+        <td><%= forecast.gross_load %></td>
+        <td><%= forecast.net_load %></td>
+        <td><%= forecast.receiver %></td>
+        <td><%= forecast.sender %></td>
+        <td><%= forecast.has_invoice %></td>
+        <td><%= forecast.has_forecast %></td>
+        <td><%= forecast.has_order %></td>
+        <td><%= forecast.has_delivery %></td>
+        <td><%= forecast.invoice_id %></td>
+        <td><%= forecast.forecast_id %></td>
+        <td><%= forecast.order_id %></td>
+        <td><%= forecast.deliverynote_id %></td>
+        <td><%= link_to t(:show), forecast %></td>
+        <td><%= link_to t(:edit), edit_forecast_path(forecast) %></td>
+        <td><%= link_to t(:destroy), forecast, method: :delete, data: { confirm: t(:confirm) } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Forecast', new_forecast_path %>

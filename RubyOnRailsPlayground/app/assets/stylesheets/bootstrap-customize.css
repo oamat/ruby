@@ -1,0 +1,107 @@
+/*Customize BODY*/
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+
+/*Customize navbar-inverse (header principal) - Para que quede margen entre el menú Header y las paestañas*/
+.navbar-inverse {
+    margin-bottom: 10px;
+}
+
+/* Customize nav-justified - Botones centrales: compras, ventas, clientes,... */
+.nav-justified > li > a {
+    font-weight: bold;
+    color: #777;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+.nav-justified > li > a:hover, .nav-justified > li > a:focus  {
+
+    background-image: linear-gradient(to bottom, #589dd9 0px, #4a8ec7 100%);
+    background-repeat: repeat-x;
+    border-color: #3278b3;
+    text-shadow: 0 -1px 0 #3071a9;
+    color: #fff;
+
+    /*background-image: linear-gradient(to bottom, #404040 0px, #464646 100%);
+    background-repeat: repeat-x;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25) inset;
+    color: #fff*/
+}
+
+.nav-justified > li > a:active, .nav-justified > .active > a {
+    /*background-image: linear-gradient(to bottom, #222 0px, #282828 100%);
+    background-repeat: repeat-x;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25) inset;
+    color: #fff*/
+    background-image: linear-gradient(to bottom, #428bca 0px, #3278b3 100%);
+    background-repeat: repeat-x;
+    border-color: #3278b3;
+    text-shadow: 0 -1px 0 #3071a9;
+    color: #fff;
+
+}
+
+
+/*Customize nav-tabs - Pestañas: Facturas, pedidos, albaranes...*/
+.nav-tabs > li > a{
+    font-weight: bold;
+    padding-right: 60px;
+    padding-left: 60px;
+
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-image: linear-gradient(to bottom, #428bca 0px, #3278b3 100%);
+    background-repeat: repeat-x;
+    border-color: #3278b3;
+    text-shadow: 0 -1px 0 #3071a9;
+    border-color: #ddd #ddd transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    cursor: default;
+}
+/*Customize Título inicial accesos directos */
+.headfont {
+    font-size: 28px;
+    color: #3278b3;
+    font-style: italic;
+}
+
+/*Customize list group accesos directos */
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+    background-image: linear-gradient(to bottom, #4e4a4a 0px, #413f3f 100%);
+    background-repeat: repeat-x;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25) inset;
+    border-color: #4e4a4a;
+    text-shadow: 0 -1px 0 #413f3f;
+}
+
+/*Customize iconos justificados */
+.icon-justified {
+    text-align: justify;
+}
+
+
+.icon-justified:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}

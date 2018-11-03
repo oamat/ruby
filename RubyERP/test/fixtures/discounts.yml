@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  discount: 9.99
+  description: MyString
+  company_id: 1
+  default: false
+
+two:
+  discount: 9.99
+  description: MyString
+  company_id: 1
+  default: false

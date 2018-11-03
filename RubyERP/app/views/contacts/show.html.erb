@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @contact.name %>
+</p>
+
+<p>
+  <strong>Cif:</strong>
+  <%= @contact.cif %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @contact.position %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @contact.department %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @contact.telephone %>
+</p>
+
+<p>
+  <strong>Other telefono:</strong>
+  <%= @contact.other_telefono %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @contact.mobile %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @contact.mail %>
+</p>
+
+<p>
+  <strong>Observations:</strong>
+  <%= @contact.observations %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @contact.client_id %>
+</p>
+
+<p>
+  <strong>Default:</strong>
+  <%= @contact.default %>
+</p>
+
+<%= link_to t(:edit), edit_contact_path(@contact) %> |
+<%= link_to t(:back), contacts_path %>

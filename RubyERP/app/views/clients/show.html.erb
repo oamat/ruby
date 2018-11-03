@@ -1,0 +1,104 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @client.company_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @client.name %>
+</p>
+
+<p>
+  <strong>Alias:</strong>
+  <%= @client.alias %>
+</p>
+
+<p>
+  <strong>Cif:</strong>
+  <%= @client.cif %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @client.telephone %>
+</p>
+
+<p>
+  <strong>Other telefono:</strong>
+  <%= @client.other_telefono %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @client.mobile %>
+</p>
+
+<p>
+  <strong>Fax:</strong>
+  <%= @client.fax %>
+</p>
+
+<p>
+  <strong>Mail:</strong>
+  <%= @client.mail %>
+</p>
+
+<p>
+  <strong>Web:</strong>
+  <%= @client.web %>
+</p>
+
+<p>
+  <strong>Observations:</strong>
+  <%= @client.observations %>
+</p>
+
+<p>
+  <strong>Incoterm:</strong>
+  <%= @client.incoterm %>
+</p>
+
+<p>
+  <strong>Incoterm location:</strong>
+  <%= @client.incoterm_location %>
+</p>
+
+<p>
+  <strong>Method of payment:</strong>
+  <%= @client.method_of_payment %>
+</p>
+
+<p>
+  <strong>Payment period:</strong>
+  <%= @client.payment_period %>
+</p>
+
+<p>
+  <strong>Documents language:</strong>
+  <%= @client.documents_language %>
+</p>
+
+<p>
+  <strong>Client type:</strong>
+  <%= @client.client_type %>
+</p>
+
+<p>
+  <strong>Currency:</strong>
+  <%= @client.currency %>
+</p>
+
+<p>
+  <strong>Tax:</strong>
+  <%= @client.tax_id %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @client.discount_id %>
+</p>
+
+<%= link_to t(:edit), edit_client_path(@client) %> |
+<%= link_to t(:back), clients_path %>

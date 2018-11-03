@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @address.name %>
+</p>
+
+<p>
+  <strong>Direction:</strong>
+  <%= @address.direction %>
+</p>
+
+<p>
+  <strong>Postal code:</strong>
+  <%= @address.postal_code %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @address.city %>
+</p>
+
+<p>
+  <strong>Province:</strong>
+  <%= @address.province %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @address.country %>
+</p>
+
+<p>
+  <strong>Post office:</strong>
+  <%= @address.post_office %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @address.type %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @address.description %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @address.client_id %>
+</p>
+
+<p>
+  <strong>Default client:</strong>
+  <%= @address.default_client %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @address.company_id %>
+</p>
+
+<p>
+  <strong>Default company:</strong>
+  <%= @address.default_company %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @address.contact_id %>
+</p>
+
+<%= link_to t(:edit), edit_address_path(@address) %> |
+<%= link_to t(:back), addresses_path %>

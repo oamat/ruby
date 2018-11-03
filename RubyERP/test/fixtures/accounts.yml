@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  iban: MyString
+  description: MyString
+  account_holder: MyString
+  client_id: 1
+  default: false
+
+two:
+  iban: MyString
+  description: MyString
+  account_holder: MyString
+  client_id: 1
+  default: false

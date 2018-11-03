@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Iban:</strong>
+  <%= @account.iban %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @account.description %>
+</p>
+
+<p>
+  <strong>Account holder:</strong>
+  <%= @account.account_holder %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @account.client_id %>
+</p>
+
+<p>
+  <strong>Default:</strong>
+  <%= @account.default %>
+</p>
+
+<%= link_to t(:edit), edit_account_path(@account) %> |
+<%= link_to t(:back), accounts_path %>

@@ -1,0 +1,8 @@
+<%=puts "params="+params[:book][:author].to_s%>
+<% if params[:book][:author]=="" %>
+   $('#myLinea').append('<%= escape_javascript(render("linea")) %>');
+   $('#myAlert').html('');
+   $("#myModal").modal("hide");
+<%else%>
+  $('#myAlert').html('<%= escape_javascript(render("linea")) %>');
+<%end%>

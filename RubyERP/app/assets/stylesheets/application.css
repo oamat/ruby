@@ -1,0 +1,36 @@
+body {
+    font-family: verdana, arial, helvetica;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.text-normal {
+    font-family: verdana, arial, helvetica;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.text-normal-bold {
+    font-family: verdana, arial, helvetica;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: bold;
+}
+.text-title-white {
+    font-family: verdana, arial, helvetica;
+    font-size: 26px;
+    color:#777777;
+    vertical-align: middle;
+    font-style: italic;
+}
+
+.text-title-blue {
+    font-family: verdana, arial, helvetica;
+    font-size: 20px;
+    color: #3278b3;
+    line-height: 45px;
+    vertical-align: middle;
+    font-style: italic;
+}

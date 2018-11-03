@@ -1,0 +1,134 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @forecast.company_id %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @forecast.client_id %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @forecast.address_id %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @forecast.address %>
+</p>
+
+<p>
+  <strong>Tax:</strong>
+  <%= @forecast.tax_id %>
+</p>
+
+<p>
+  <strong>Tax:</strong>
+  <%= @forecast.tax %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @forecast.discount_id %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @forecast.discount %>
+</p>
+
+<p>
+  <strong>Payment:</strong>
+  <%= @forecast.payment %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @forecast.date %>
+</p>
+
+<p>
+  <strong>Observations:</strong>
+  <%= @forecast.observations %>
+</p>
+
+<p>
+  <strong>Expiration:</strong>
+  <%= @forecast.expiration %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @forecast.total %>
+</p>
+
+<p>
+  <strong>Tariff code:</strong>
+  <%= @forecast.tariff_code %>
+</p>
+
+<p>
+  <strong>Gross load:</strong>
+  <%= @forecast.gross_load %>
+</p>
+
+<p>
+  <strong>Net load:</strong>
+  <%= @forecast.net_load %>
+</p>
+
+<p>
+  <strong>Receiver:</strong>
+  <%= @forecast.receiver %>
+</p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @forecast.sender %>
+</p>
+
+<p>
+  <strong>Has invoice:</strong>
+  <%= @forecast.has_invoice %>
+</p>
+
+<p>
+  <strong>Has forecast:</strong>
+  <%= @forecast.has_forecast %>
+</p>
+
+<p>
+  <strong>Has order:</strong>
+  <%= @forecast.has_order %>
+</p>
+
+<p>
+  <strong>Has delivery:</strong>
+  <%= @forecast.has_delivery %>
+</p>
+
+<p>
+  <strong>Invoice:</strong>
+  <%= @forecast.invoice_id %>
+</p>
+
+<p>
+  <strong>Forecast:</strong>
+  <%= @forecast.forecast_id %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @forecast.order_id %>
+</p>
+
+<p>
+  <strong>Deliverynote:</strong>
+  <%= @forecast.deliverynote_id %>
+</p>
+
+<%= link_to t(:edit), edit_forecast_path(@forecast) %> |
+<%= link_to t(:back), forecasts_path %>

@@ -1,0 +1,29 @@
+<h1>Test frameworks RoR</h1>
+
+
+
+<h3>I18n Locale</h3>
+devise.en.yml variable : <%= t('devise.confirmations.confirmed') %><br>
+Change I18n Locale = ca<br>
+<%I18n.locale = :en%>   ca.yml variable : <%= t('hello') %> <br>
+devise.ca.yml variable : <%= t('devise.confirmations.confirmed') %>
+<br><br>
+<h3>other Gems</h3>
+<%=link_to "Provar estils bootstrap", :controller => "welcome", action: "estil" %><br><br>
+<%=link_to "Provar Taula llista", :controller => "welcome", action: "dashboard" %><br><br>
+<%=link_to "Provar Edició Client", :controller => "welcome", action: "edit" %><br><br>
+<%=link_to "Provar Lineas Factura", :controller => "welcome", action: "factura" %><br><br>
+<%=link_to "Provar will_paginate en Scafolding (books)", :controller => "books", action: "index"%><br><br>
+<%=link_to "Provar PrawnPDF", :controller => "verpdf", action: "generar" , :format => :pdf %><br><br>
+<%=link_to "Provar Devise and ActiveMailer", :controller => "devise/sessions", action: "new"%><br><br>
+<%=link_to "Provar Validate model y multidioma", :controller => "books", action: "new" %><br><br>
+<%=link_to "Provar ActiveAdmin", :controller => "active_admin/devise/sessions", action: "new"%><br><br>
+<%=link_to "Provar AJAX recarga llistes", :controller => "books", action: "index"%><br><br>
+
+
+
+<h3>session and instance var Devise</h3>
+current_user.email   :< % = current_user.email? % > <br>
+current_user.encrypted_password  : < % = current_user.encrypted_password % > <br>
+current_user.id   :< % = current_user.id % > <br>
+user_session  :<%=user_session%> <br>

@@ -1,0 +1,53 @@
+<h1>Listing lines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Client</th>
+      <th>Invoice</th>
+      <th>Order</th>
+      <th>Deliverynote</th>
+      <th>Forecast</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Discount</th>
+      <th>Discount</th>
+      <th>Tax</th>
+      <th>Tax</th>
+      <th>Description</th>
+      <th>Total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lines.each do |line| %>
+      <tr>
+        <td><%= line.company_id %></td>
+        <td><%= line.client_id %></td>
+        <td><%= line.invoice_id %></td>
+        <td><%= line.order_id %></td>
+        <td><%= line.deliverynote_id %></td>
+        <td><%= line.forecast_id %></td>
+        <td><%= line.name %></td>
+        <td><%= line.price %></td>
+        <td><%= line.quantity %></td>
+        <td><%= line.discount_id %></td>
+        <td><%= line.discount %></td>
+        <td><%= line.tax_id %></td>
+        <td><%= line.tax %></td>
+        <td><%= line.description %></td>
+        <td><%= line.total %></td>
+        <td><%= link_to t(:show), line %></td>
+        <td><%= link_to t(:edit), edit_line_path(line) %></td>
+        <td><%= link_to t(:destroy), line, method: :delete, data: { confirm: t(:confirm) } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Line', new_line_path %>

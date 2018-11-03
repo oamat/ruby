@@ -1,0 +1,70 @@
+<!--navbar-inverse Header inicial (menú central y settings)-->
+<div class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 disabled">
+        <div class="navbar-header disabled"> <!-- Toggle Menú for mobile -->
+          <button type="button" class="navbar-toggle collapsed disabled" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" class="disabled">GestionUs</a>
+        </div><!--/.navbar-header -->
+      </div><!--/.div col -->
+      <div class="col-md-7">
+        <h1>PASO 1 : Introducir información de su empresa</h1>
+      </div><!--/.div col -->
+      <div class="col-md-3">
+        <div class="navbar-collapse collapse disabled">
+          <ul class="nav navbar-nav navbar-right disabled" id="myNavTab">  <!-- Botones Settings... -->
+            <li class="disabled"><a href="#" title="Profile" class="disabled"><span class="glyphicon glyphicon-user disabled"></span></a></li>
+            <li class="disabled"><a href="#" title="Settings" class="disabled"><span class="glyphicon glyphicon-cog disabled"></span></a></li>
+            <li class="disabled"><a href="#" title="Help" class="disabled"><span class="glyphicon glyphicon-question-sign disabled"></span></a></li>
+            <li class="disabled"><a href="#" title="License" class="disabled"><span class="glyphicon glyphicon-info-sign disabled"></span></a></li>
+            <li class="disabled"><a href="#" title="Contact" class="disabled"><span class="glyphicon glyphicon-comment disabled"></span></a></li>
+            <li class="disabled"><a href="#" title="Logout" class="disabled"><span class="glyphicon glyphicon-off"></span></a></li>
+          </ul><!--/.navbar-right -->
+        </div><!--/.nav-collapse -->
+      </div> <!--/.div col -->
+    </div> <!--/.div row -->
+  </div><!--/.container-fluid -->
+</div> <!--/.fixed-navbar -->
+
+
+<!--Container Fluid, con autoResize - Resto página (sin header) -->
+<div class="container-fluid">
+  <!--Título y alerts  -->
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-6"><h2 class="headfont">PASO 1 :  Introducir información de su empresa</h2></div>
+    <div class="col-md-2" align = "right"></div>
+    <div class="col-md-2"></div>
+  </div>
+  <!--/.Título y alerts  -->
+
+  <!-- ListGroup Accessos, filtros y tabla derecha-->
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-2">
+      <!-- ListGroup Accesos Directos y filtros-->
+      <div class="list-group">
+        <div class="list-group-item active"><b>¿Para que son estos datos?</b></div>
+        <a href="#" class="list-group-item disabled">La información que usted introducirá en este formulario es de vital importancia, puesto que va a servir para que GestionUs pueda generar todos los documentos contractuales: como los albaranes, pedidos, presupuestos y facturas, entre otras cosas.</a>
+        <a href="#" class="list-group-item disabled">La mayoría de la información puede dejarse en blanco y cumplimentarla posteriormente, pero recuerde que si no rellena esta información correctamente los documentos asociados a su negocio, tales como los albaranes, pedidos, presupuestos y facturas, entre otros documentos no serán correctos.</a>
+        <a href="#" class="list-group-item disabled">Si tiene cualquier duda o sugerencia puede contactar con nosotros : gestionus@gmail.com </a>
+      </div>
+    </div>
+    <!-- /.ListGroup Accesos Directos y filtros-->
+    <!-- Tabla detalle -->
+    <div class="col-md-6">
+      <%= render "companies/form" %>
+    </div>
+    <!-- ./Tabla detalle -->
+    <div class="col-md-2"></div>
+  </div>
+  <!-- /.ListGroup Accessos, filtros y tabla derecha-->
+
+ </div>
+<!-- /.Container Fluid, con autoResize - Resto página (sin header) -->

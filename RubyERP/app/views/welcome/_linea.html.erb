@@ -1,0 +1,29 @@
+<%=puts "params="+params[:book][:author].to_s%>
+<% if params[:book][:author]=="" %>
+<div class="table-responsive">
+  <table class="table  table-bordered table-striped table-condensed">
+  <thead>
+  <tr>
+    <th>#</th>
+    <th>Header</th>
+    <th>Header</th>
+    <th>Header</th>
+    <th>Actions</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>3</td>
+    <td>n</td>
+    <td>n</td>
+    <td>n</td>
+    <td>n</td>
+    <td>4</td>
+  </tr>
+<tbody>
+</table>
+</div>
+<%else%>
+Ha habido un error en el campo autor!!
+<%end%>

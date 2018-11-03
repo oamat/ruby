@@ -1,0 +1,134 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @invoice.company_id %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @invoice.client_id %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @invoice.address_id %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @invoice.address %>
+</p>
+
+<p>
+  <strong>Tax:</strong>
+  <%= @invoice.tax_id %>
+</p>
+
+<p>
+  <strong>Tax:</strong>
+  <%= @invoice.tax %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @invoice.discount_id %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @invoice.discount %>
+</p>
+
+<p>
+  <strong>Payment:</strong>
+  <%= @invoice.payment %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @invoice.date %>
+</p>
+
+<p>
+  <strong>Observations:</strong>
+  <%= @invoice.observations %>
+</p>
+
+<p>
+  <strong>Expiration:</strong>
+  <%= @invoice.expiration %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @invoice.total %>
+</p>
+
+<p>
+  <strong>Tariff code:</strong>
+  <%= @invoice.tariff_code %>
+</p>
+
+<p>
+  <strong>Gross load:</strong>
+  <%= @invoice.gross_load %>
+</p>
+
+<p>
+  <strong>Net load:</strong>
+  <%= @invoice.net_load %>
+</p>
+
+<p>
+  <strong>Receiver:</strong>
+  <%= @invoice.receiver %>
+</p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @invoice.sender %>
+</p>
+
+<p>
+  <strong>Has invoice:</strong>
+  <%= @invoice.has_invoice %>
+</p>
+
+<p>
+  <strong>Has forecast:</strong>
+  <%= @invoice.has_forecast %>
+</p>
+
+<p>
+  <strong>Has order:</strong>
+  <%= @invoice.has_order %>
+</p>
+
+<p>
+  <strong>Has delivery:</strong>
+  <%= @invoice.has_delivery %>
+</p>
+
+<p>
+  <strong>Invoice:</strong>
+  <%= @invoice.invoice_id %>
+</p>
+
+<p>
+  <strong>Forecast:</strong>
+  <%= @invoice.forecast_id %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @invoice.order_id %>
+</p>
+
+<p>
+  <strong>Deliverynote:</strong>
+  <%= @invoice.deliverynote_id %>
+</p>
+
+<%= link_to t(:edit), edit_invoice_path(@invoice) %> |
+<%= link_to t(:back), invoices_path %>

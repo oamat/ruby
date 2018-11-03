@@ -1,0 +1,23 @@
+<%= form_for(@discount) do |f| %>
+    <%= render "layouts/errors", :errors => @discount.errors %>
+
+  <div class="field">
+    <%= f.label :discount %><br>
+    <%= f.text_field :discount %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :company_id %><br>
+    <%= f.number_field :company_id %>
+  </div>
+  <div class="field">
+    <%= f.label :default %><br>
+    <%= f.check_box :default %>
+  </div>
+  <div class="actions">
+    <%= f.submit t(:submit) %>
+  </div>
+<% end %>

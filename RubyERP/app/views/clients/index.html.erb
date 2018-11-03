@@ -1,0 +1,63 @@
+<h1>Listing clients</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Company</th>
+      <th>Name</th>
+      <th>Alias</th>
+      <th>Cif</th>
+      <th>Telephone</th>
+      <th>Other telefono</th>
+      <th>Mobile</th>
+      <th>Fax</th>
+      <th>Mail</th>
+      <th>Web</th>
+      <th>Observations</th>
+      <th>Incoterm</th>
+      <th>Incoterm location</th>
+      <th>Method of payment</th>
+      <th>Payment period</th>
+      <th>Documents language</th>
+      <th>Client type</th>
+      <th>Currency</th>
+      <th>Tax</th>
+      <th>Discount</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clients.each do |client| %>
+      <tr>
+        <td><%= client.company_id %></td>
+        <td><%= client.name %></td>
+        <td><%= client.alias %></td>
+        <td><%= client.cif %></td>
+        <td><%= client.telephone %></td>
+        <td><%= client.other_telefono %></td>
+        <td><%= client.mobile %></td>
+        <td><%= client.fax %></td>
+        <td><%= client.mail %></td>
+        <td><%= client.web %></td>
+        <td><%= client.observations %></td>
+        <td><%= client.incoterm %></td>
+        <td><%= client.incoterm_location %></td>
+        <td><%= client.method_of_payment %></td>
+        <td><%= client.payment_period %></td>
+        <td><%= client.documents_language %></td>
+        <td><%= client.client_type %></td>
+        <td><%= client.currency %></td>
+        <td><%= client.tax_id %></td>
+        <td><%= client.discount_id %></td>
+        <td><%= link_to t(:show), client %></td>
+        <td><%= link_to t(:edit), edit_client_path(client) %></td>
+        <td><%= link_to t(:destroy), client, method: :delete, data: { confirm: t(:confirm) } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Client', new_client_path %>

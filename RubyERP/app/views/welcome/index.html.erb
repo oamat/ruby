@@ -1,0 +1,17 @@
+<h1>Welcome on Heroku</h1>
+
+<%I18n.locale = :es%>
+<%=link_to "Log In", :controller => "devise/sessions", action: "new"%><br><br>
+
+<br><br>
+<%=link_to "Proves anteriors", :controller => "welcome", action: "index1"%><br><br>
+
+
+
+<br><br>
+devise_email_sender: <%= ENV["DEVISE_EMAIL_SENDER"] %><br>
+dropbox_user_id: <%= ENV["DROPBOX_USER_ID"] %><br>
+
+
+<% #link_to "CRUD COMPANY", :controller => "companies", action: "index" %>
+

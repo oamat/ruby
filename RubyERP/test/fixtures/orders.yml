@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company_id: 1
+  client_id: 1
+  address_id: 1
+  address: MyString
+  tax_id: 1
+  tax: 9.99
+  discount_id: 1
+  discount: 9.99
+  payment: 1
+  date: 2014-09-26
+  observations: MyText
+  expiration: 2014-09-26
+  total: 9.99
+  tariff_code: 1
+  gross_load: MyString
+  net_load: MyString
+  receiver: MyString
+  sender: MyString
+  has_invoice: 1
+  has_forecast: 1
+  has_order: 1
+  has_delivery: 1
+  invoice_id: 1
+  forecast_id: 1
+  order_id: 1
+  deliverynote_id: 1
+
+two:
+  company_id: 1
+  client_id: 1
+  address_id: 1
+  address: MyString
+  tax_id: 1
+  tax: 9.99
+  discount_id: 1
+  discount: 9.99
+  payment: 1
+  date: 2014-09-26
+  observations: MyText
+  expiration: 2014-09-26
+  total: 9.99
+  tariff_code: 1
+  gross_load: MyString
+  net_load: MyString
+  receiver: MyString
+  sender: MyString
+  has_invoice: 1
+  has_forecast: 1
+  has_order: 1
+  has_delivery: 1
+  invoice_id: 1
+  forecast_id: 1
+  order_id: 1
+  deliverynote_id: 1
