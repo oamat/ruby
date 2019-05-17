@@ -2,6 +2,9 @@
 
 Several Ruby projects developed with Ruby On Rails.
 
+
+*You can find other readme with instructions and descriptions in any folder (project).*
+
 -----------------------------------------------
 # How can I download a folder of this git repo
 
